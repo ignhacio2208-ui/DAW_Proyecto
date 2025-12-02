@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frimineta FC | Website</title>
+    <link rel="preload" href="css/normalize.css" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">
+        Frimineta FC <span>Website</span>
+      </h1>
+    </header>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a
+        ><!--Simula un enlace-->
+        <a href="Socios.html">Socios</a>
+        <a href="prueba_jerarquia2/Equipos.html">Equipo Filial</a>
+        <a href="prueba_jerarquia/Primer_Plantel.html">Primer Plantel</a>
+      </nav>
+    </div>
+
+    <!--<img src="imagenes/portada_desarrollo_web.jpg" />-->
+    <section class="hero">
+      <div class="contenido-hero">
+        <p>Frimineta Futbol Club</p>
+
+        <p>Guayas, Guayaquil, Ecuador <img src="imagenes/icon.svg" /></p>
+        <a class="boton" href="https://www.facebook.com/">Contactar</a>
+      </div>
+    </section>
+
+    <main class="contenedor sombra">
+      <h2>Acerca de</h2>
+      <div class="contenidos">
+        <!--Si tengo un heading como primer hijo se recomienda hacer un section-->
+        <section class="contenido">
+          <h3>Club filial</h3>
+          <div class="iconosB">
+            <img src="imagenes/Castilla.svg" />
+          </div>
+
+          <p>
+            Frimineta Castilla Fc - Segunda division 
+          </p>
+        </section>
+        <section class="contenido">
+          <h4>Historia</h4>
+          <div class="iconos">
+            <img src="imagenes/FFC.svg" />
+          </div>
+          <p>
+           Club fundado en guayaquil, actualmente jugando en primera division de la ligaPro
+          </p>
+        </section>
+        <section class="contenido">
+          <h4>Sede</h4>
+          <div class="iconosC">
+            <img src="imagenes/gye.svg" />
+          </div>
+          <p>
+            Sede ubicada en Parque Samanes-Guayaquil
+          </p>
+        </section>
+        <section class="contenido">
+          <h4>Logros</h4>
+          <div class="iconosD">
+            <img src="imagenes/copo.svg" />
+          </div>
+          <p>
+           Actual Asenso a la primera division de la ligaPro
+          </p>
+        </section>
+      </div>
+
+      <section>
+        <h2>Contacto</h2>
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactanos</legend>
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Escriba su nombre..."
+                />
+              </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" />
+              </div>
+              <div class="campo">
+                <label>Telefono</label>
+                <input class="input-text" type="tel" />
+              </div>
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
+            </div>
+            <div class="enviar">
+              <input class="boton" type="submit" value="Envíar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p> © 2025 — Frimineta Fútbol Club</p>
+    </footer>
+  </body>
+</html>
