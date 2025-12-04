@@ -60,9 +60,11 @@ formulario.addEventListener("submit", function(e) {
     }
    //se envia el formulario
     console.log("Enviando formulario");
-
-  
-    console.log(datos);
+    mostrarOk("Mensaje enviado correctamente");
+    formulario.reset();
+    datos.nombre = "";
+    datos.email = "";
+    datos.mensaje = "";
 });
 
 function mostrarError(mensaje) {
@@ -73,16 +75,16 @@ function mostrarError(mensaje) {
     //Eliminar la alerta despues de 0.3 segundos
     setTimeout(() => {
         error.remove();
-    }, 300);
+    }, 3000);
 }
 
 function mostrarOk (mensaje) { 
-    const ok =  document.createElement("P");
-    ok.textContent = mensaje;
+    const ok = document.createElement("P");
+    ok.textContent = mensaje; // <--- CORREGIDO: Usar 'ok'
     ok.classList.add("correcto");
-    formulario.appendChild(ok);
-    //Eliminar la alerta despues de 2 segundos
+    formulario.appendChild(ok); // <--- CORREGIDO: Usar 'ok'
+    // Eliminar la alerta despues de 2 segundos
     setTimeout(() => {
-        ok.remove();
-    }, 2000);
+        ok.remove(); // <--- CORREGIDO: Usar 'ok'
+    }, 3000);
 }
