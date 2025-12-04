@@ -7,13 +7,7 @@
   font-family: Inter, Arial, sans-serif;
 }
 
-/* GENERAL */
-body{
-  margin:0;
-  padding:2rem;
-  background:var(--white);
-  color:var(--black);
-}
+
 
 /* CONTENEDORES */
 .container{
